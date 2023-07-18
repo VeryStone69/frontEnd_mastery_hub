@@ -20,7 +20,6 @@ export const HW3 = () => {
   };
 
   const handleSave = () => {
-      console.log(texts)
     setTexts([...texts,currentText])
     setCurrentText('')
     // ЗАСЕТАТЬ БЫ ТЕКСТ В texts И НЕ ПОТЕРЯТЬ НАПУТСТВИЕ ИЗ ПРОШЛОГО ВЕКА)
