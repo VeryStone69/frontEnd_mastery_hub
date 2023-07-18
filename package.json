@@ -1,6 +1,6 @@
 {
   "name": "pre-homeworks",
-  "homepage": "https://VeryStone69.github.io/hw_with_autocheck",
+    "homepage": "https://VeryStone69.github.io/hw_with_autocheck",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
