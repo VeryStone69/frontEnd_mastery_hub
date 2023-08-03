@@ -2,21 +2,40 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
 }
 
 .error {
+    color: red;
 }
 
 .input {
+    width: 372px;
+    height: 36px;
+    left: 70px;
+    border: 1px solid #D1D1D1;
+    font-size: large;
 }
 
 .input:focus {
 }
 
 .errorInput {
+    width: 372px;
+    height: 36px;
+    border: 2px solid #ee3030;
+    border-radius: 5px;
 }
 
 .button {
+    margin-left: 10px;
+    height: 40px;
+    background: #06C;
+    color: #FFFFFF;
+    font-size: medium;
+    border-radius: 5px;
+    width: 76px;
+
 }
 
 .button:focus {
@@ -29,6 +48,10 @@
 }
 
 .text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5);
+
 }
 
 .greeting {
