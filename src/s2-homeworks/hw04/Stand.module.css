@@ -1,7 +1,11 @@
 .stand {
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-content: space-between;
+
 }
 
 .inputs {
