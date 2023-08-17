@@ -1,25 +1,145 @@
+/*СТИЛИ КОГДА ЕГО НЕТ*/
+/*.sidebar {*/
+/*    position: absolute;*/
+/*    left: -9999em;*/
+/*    transition: transform ease-out 0.25s;*/
+/*    transform: translateX(-100%);*/
+/*}*/
+/*СТИЛИ КОГДА ВЫЕХАЛ САЙТБАР*/
+/*.sidebar.open {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    width: 317px;*/
+/*    height: 100%;*/
+/*    padding: 20px;*/
+/*    box-sizing: border-box;*/
+/*    background: rgb(255, 255, 255);*/
+/*    color: white;*/
+/*    z-index: 10;*/
+/*    transform: translateX(-1%);*/
+/*    transition: transform 0.25s linear;*/
+
+/*}*/
+/*КАКАЯ-ТО ФИГНЯ для ссылок наверное...*/
+/*.background {*/
+/*    background: rgba(0, 0, 0, 0.3);*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    z-index: 100;*/
+/*}*/
+/*КОНТЕЙНЕР ДЛЯ ССЫЛОК*/
+/*.nav {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+/*СТАНДАРТНЫЕ СТИЛИ ДЛЯ ССЫЛОК*/
+/*.nav a {*/
+/*    padding: 22px;*/
+/*    color: #000;*/
+/*    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;*/
+/*    font-size: 22px;*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    line-height: normal;*/
+/*}*/
+/*КОГДА МЫШКА НА ССЫЛКЕ*/
+/*.nav a:hover {*/
+/*    color: #3D6B99;*/
+/*}*/
+/*КОГДА КЛИК ПО ССЫЛКЕ*/
+/*.nav a.active {*/
+/*    color: #0059B2;*/
+/*    font-size: 22px;*/
+/*    font-style: normal;*/
+/*    font-weight: 600;*/
+/*    line-height: normal;*/
+/*    text-decoration-line: underline;*/
+
+/*}*/
+/*.active {*/
+/*    color: #0059B2;*/
+/*    text-decoration: underline #0059B2;*/
+/*}*/
+/*КНОПКА */
+/*.close {*/
+/*    display: inline-block;*/
+/*    padding: 5px 10px;*/
+/*    border: none;*/
+/*    background: rgba(255, 255, 255, 0);*/
+/*    cursor: pointer;*/
+/*    user-select: none;*/
+/*    float: right;*/
+
+/*}*/
+/*ДЛЯ КРЕСТИКА*/
+/*.close img {*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    flex-shrink: 0;*/
+/*}*/
 .sidebar {
+    display: none;
 }
 
 .sidebar.open {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    background: #FFFFFF;
+    top: 0;
+    left: 0;
 }
 
 .background {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .nav {
+    margin: 0 auto;
 }
-
 .nav a {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    padding: 12px;
 }
 
 .nav a:hover {
+    color: #58ACFF;
 }
-
+nav a:hover:active{
+    color: #3D6B99;
+}
 .nav a.active {
+    text-decoration-line: underline;
+    color: #0059B2;
 }
 .close {
+    width: 40px;
+    background: none;
+    border: none;
 }
 
 .close img {
+padding: 4px;
 }
