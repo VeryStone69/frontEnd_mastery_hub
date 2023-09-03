@@ -1,4 +1,8 @@
 .radio {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #000;
 }
 
 .radio::before {
@@ -6,10 +10,22 @@
 
 
 .radio:checked::before {
+
 }
 
 .label {
+    padding-bottom: 10px;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+
+}
+.span {
+    font-size: larger;
+    text-align: center;
+    font-weight: 500;
+    vertical-align: text-bottom;
+    margin-left: 6px;
 }

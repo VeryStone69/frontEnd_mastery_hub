@@ -1,4 +1,10 @@
 .select {
+    width: 165px;
+    height: 24px;
+    border-radius: 5px;
+    font-size: large;
+    color: rgba(40, 44, 52, 0.55);
+    flex-shrink: 0;
 }
 
 .select:focus {

@@ -1,2 +1,11 @@
 .container {
+    display: flex;
+    justify-content: flex-start;
+
+}
+.superSelect_container {
+    margin-left: 30px;
+}
+.superRadio_container{
+    margin-left: 120px;
 }

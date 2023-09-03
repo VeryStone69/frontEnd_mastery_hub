@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW15.module.css'
 import axios from 'axios'
-import SuperPagination from './common/c9-SuperPagination/SuperPagination'
+// import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 
@@ -109,12 +109,12 @@ const HW15 = () => {
             <div className={s2.hw}>
                 {idLoading && <div id={'hw15-loading'} className={s.loading}>Loading...</div>}
 
-                <SuperPagination
-                    page={page}
-                    itemsCountForPage={count}
-                    totalCount={totalCount}
-                    onChange={onChangePagination}
-                />
+                {/*<SuperPagination*/}
+                {/*    page={page}*/}
+                {/*    itemsCountForPage={count}*/}
+                {/*    totalCount={totalCount}*/}
+                {/*    onChange={onChangePagination}*/}
+                {/*/>*/}
 
                 <div className={s.rowHeader}>
                     <div className={s.techHeader}>
@@ -133,5 +133,5 @@ const HW15 = () => {
         </div>
     )
 }
-
-export default HW15
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!ДОБАВИТЬ ЭКСПОРТ!!!!!!!!!!!!!!!!!!!!!!!!!!
+// export default HW15
