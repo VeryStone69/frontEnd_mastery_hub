@@ -5,19 +5,47 @@
 }
 
 .users {
+    width: 60%;
+    margin-top: 29px;
+    border-collapse: collapse;
+
+}
+.users td {
+    height: 2em;
+    border: 1px solid rgba(221, 221, 221, 0);
+    padding: 6px 6px 6px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .buttonsContainer {
+    width: 60%;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 
 .container {
 }
 
 .thead {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
 }
 
-.nameCol {
-}
+ tbody:first-child {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
+}
+.nameCol{
+}
 .ageCol {
 }
