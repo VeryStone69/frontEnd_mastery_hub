@@ -2,6 +2,16 @@
 }
 
 .wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.numberRight {
+    margin-left: 20px;
+}
+.numberLeft {
+    margin-right: 20px;
 }
 
 .number {
