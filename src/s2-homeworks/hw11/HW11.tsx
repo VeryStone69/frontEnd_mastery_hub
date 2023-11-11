@@ -43,6 +43,7 @@ function HW11() {
                             value={value1}
                             callback = {change}
                         />
+                        <span id={'hw11-value-2'} className={s.numberRight}>100</span>
                     </div>
                     <div className={s.wrapper}>
                         <span id={'hw11-value-1'} className={s.numberLeft}>{value1}</span>
