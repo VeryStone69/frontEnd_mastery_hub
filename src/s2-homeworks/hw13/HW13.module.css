@@ -1,14 +1,17 @@
 .buttonsContainer {
-    width: 80%;
     display: flex;
     flex-direction: row;
-    align-content: center;
     justify-content: space-evenly;
     align-items: center;
 }
 
 
 .responseContainer {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 .imageContainer {
@@ -18,12 +21,23 @@
 }
 
 .textContainer{
+    padding-left: 10px;
 }
 
 .code {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
-.text {
-}
-.info {
+.text,.info {
+    color: #000;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
