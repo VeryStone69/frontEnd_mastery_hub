@@ -1,11 +1,11 @@
 .button {
     background-color: rgba(0, 102, 204, 1);
-
+    display: inline-block;
     color: #FFFFFF;
     font-size: medium;
     font-weight: bold;
     height: 30px;
-    width: 132px;
+    min-width: 132px;
     border: 0px;
     border-radius: 3px;
     padding: 5px 15px;

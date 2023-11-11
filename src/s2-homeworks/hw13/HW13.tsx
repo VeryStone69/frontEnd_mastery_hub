@@ -21,53 +21,40 @@ const HW13 = () => {
     const [image, setImage] = useState('')
     const [isLoading, setIsLoading] = useState(false);
 
-
+    const setterStates = (codeValue:string,imageValue:string,textValue:string,infoValue:string)=>{
+        setCode(codeValue);
+        setImage(imageValue);
+        setText(textValue);
+        setInfo(infoValue);
+    }
     const send = (x?: boolean | null) => () => {
         const url = x === null ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
                                                             : 'https://samurai.it-incubator.io/api/3.0/homework/test'
-
-        setCode('')
-        // setImage('')
-        setText('')
-        setInfo('...loading')
+        setterStates("","","",'...loading')
         setIsLoading(true)
         axios
             .post(url, {success: x})
             .then((res) => {
-                console.log(res)
-                setCode('Код 200!')
-                setImage(success200)
-                setText('...всё ок)')
-                setInfo('код 200 - обычно означает что скорее всего всё ок)')
-                // дописать
+                setterStates("Код 200!",
+                    success200,"...всё ок)",
+                    'код 200 - обычно означает что скорее всего всё ок)')
 
             })
             .catch((e) => {
                 if (e.response) {
-                    // Сервер вернул ошибку 5xx или 4xx
                     if (e.response.status === 500){
-                        setCode('Ошибка 500!')
-                        setImage(error500)
-                        setText(`эмитация ошибки на сервере`)
-                        setInfo(`ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)`)
+                        setterStates('Ошибка 500!',
+                            error500,`эмитация ошибки на сервере`,
+                            `ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)`)
                     } else {
-                        setCode('Ошибка 400!')
-                        setImage(error400)
-                        setText(`Ты не отправил success в body вообще!`)
-                        setInfo(`ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!`)
+                        setterStates("Ошибка 400!",
+                            error400,"...всё ок)",
+                            `ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!`)
                     }
 
                 } else if (e.request) {
-                    // Запрос был сделан, но не было получено никакого ответа
-                    setCode('Error')
-                    setImage(errorUnknown)
-                    setText(`${e.message}`)
-                    setInfo(`${e.name}`)
+                    setterStates('Error',errorUnknown,`${e.message}`,`${e.name}`)
                 }
-
-
-                // дописать
-
             })
             .finally(()=>{
                 setIsLoading(false)
@@ -85,8 +72,6 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         disabled={isLoading}
-                        // дописать
-
                     >
                         Send true
                     </SuperButton>
@@ -95,8 +80,6 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         disabled={isLoading}
-                        // дописать
-
                     >
                         Send false
                     </SuperButton>
@@ -105,8 +88,6 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         disabled={isLoading}
-                        // дописать
-
                     >
                         Send undefined
                     </SuperButton>
@@ -115,8 +96,6 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         disabled={isLoading}
-                        // дописать
-
                     >
                         Send null
                     </SuperButton>
