@@ -3,5 +3,14 @@
 }
 
 .loading {
+    color: #4D4D4D;
 
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 32%;
+    display: flex;
+    justify-content: right;
 }

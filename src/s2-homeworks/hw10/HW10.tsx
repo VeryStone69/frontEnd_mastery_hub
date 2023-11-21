@@ -26,7 +26,6 @@ const HW10 = () => {
 
         // setTimeout
     }
-    console.log(isLoading)
     return (
         <div id={'hw10'}>
             <div className={s2.hwTitle}>Homework #10</div>
