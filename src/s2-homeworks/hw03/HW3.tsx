@@ -3,42 +3,27 @@ import { v1 } from 'uuid'
 import s2 from '../../s1-main/App.module.css'
 import GreetingContainer from './GreetingContainer'
 
-/*
-* 1 - описать тип UserType                       === OK ===
-* 2 - указать нужный тип в useState с users     === OK ===
-* 3 - дописать типы и логику функции pureAddUserCallback и проверить её тестами         === OK ===
-* 4 - в файле GreetingContainer.tsx дописать типизацию пропсов                          === OK ===
-* 5 - в файле GreetingContainer.tsx указать нужные типы в useState с name и error       === OK ===
-* 6 - в файле GreetingContainer.tsx дописать тип и логику функции setNameCallback       === OK ===
-* 7 - в файле GreetingContainer.tsx дописать логику функций pureAddUser, pureOnBlur, pureOnEnter и проверить их тестами  === OK ===
-* 8 - в файле GreetingContainer.tsx вычислить количество добавленных и имя последнего (totalUsers, lastUserName)        === OK ===
-* 9 - в файле Greeting.tsx дописать типизацию пропсов       === OK ===
-* 10 - в файле Greeting.tsx вычислить inputClass в зависимости от наличия ошибки    === OK ===
-* 11 - сделать стили в соответствии с дизайном  === OK ===
-* */
-
 // types
 export type UserType = {
-    _id: string // need to fix any
-    name: string // need to fix any
+    _id: string
+    name: string
 }
 
-export const pureAddUserCallback = (name: string, setUsers: any, users: UserType[]) => { // need to fix any
+export const pureAddUserCallback = (name: string, setUsers: any, users: UserType[]) => {
     const user = {_id:v1(), name:name}
     setUsers([...users, user])
 }
 
 const HW3 = () => {
-    const [users, setUsers] = useState<UserType[]>([]) // need to fix any
+    const [users, setUsers] = useState<UserType[]>([])
 console.log(users)
-    const addUserCallback = (name: string) => { // need to fix any
+    const addUserCallback = (name: string) => {
         pureAddUserCallback(name, setUsers, users)
     }
 
     return (
         <div id={'hw3'}>
-            <div className={s2.hwTitle}>Homework #3</div>
-            {/*для автоматической проверки дз (не менять)*/}
+            <div className={s2.hwTitle}>Task #3</div>
 
             <div className={s2.hw}>
                 <GreetingContainer

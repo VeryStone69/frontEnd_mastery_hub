@@ -2,20 +2,6 @@ import React, {useState} from 'react'
 import Affairs from './affairs/Affairs'
 import s2 from '../../s1-main/App.module.css'
 
-/*
-* 1 - описать типы AffairPriorityType, AffairType                           !!!OK!!!
-* 2 - указать нужный тип для defaultAffairs                                 !!!OK!!!
-* 3 - дописать типы и логику функции filterAffairs и проверить её тестами   !!! OK!!!
-* 4 - выполнить пункт 3 для функции deleteAffair                            !!!OK!!!
-* 5 - указать нужный тип в useState с affairs                               !!!OK!!!
-* 6 - дописать тип и логику функции deleteAffairCallback                    !!!OK!!!
-* 7 - в файле Affairs.tsx дописать типизацию пропсов                        !!!OK!!!
-* 8 - в файле Affairs.tsx дописать логику функций setAll, setHigh, setMiddle, setLow    !!!OK!!!
-* 9 - в файле Affair.tsx дописать типизацию пропсов
-* 10 - в файле Affair.tsx дописать функции deleteCallback и использовать    !!!OK!!!
-* 11 - в файле Affair.tsx отобразить приходящие данные                      !!!OK!!!
-* */
-
 // types
 export type AffairPriorityType = 'high' | 'middle' | 'low'
 export type AffairType = {
@@ -39,12 +25,12 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
     if (filter === "all") return affairs
     return affairs.filter(el => el.priority === filter)
 }
-export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => {
     return affairs.filter(el => el._id !== _id)
 }
 
 function HW2() {
-    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs)
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
@@ -54,7 +40,7 @@ function HW2() {
 
     return (
         <div id={'hw2'}>
-            <div className={s2.hwTitle}>Homework #2</div>
+            <div className={s2.hwTitle}>Task #2</div>
             <div className={s2.hw}>
                 <Affairs
                     data={filteredAffairs}

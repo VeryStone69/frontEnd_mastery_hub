@@ -4,14 +4,8 @@ import s2 from '../../s1-main/App.module.css'
 import { restoreState } from '../hw06/localStorage/localStorage'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 
-/*
-* 1 - передать значения в оба слайдера
-* 2 - дописать типы и логику функции change
-* 3 - сделать стили в соответствии с дизайном
-* */
 
 function HW11() {
-    // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 20))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
 
@@ -26,12 +20,9 @@ function HW11() {
 
         }
 
-        //пишет студент  если пришёл массив - сохранить значения в оба useState, иначе в первый
-
-
     return (
         <div id={'hw11'}>
-            <div className={s2.hwTitle}>Homework #11</div>
+            <div className={s2.hwTitle}>Task #11</div>
 
             <div className={s2.hw}>
                 <div className={s.container}>
@@ -39,7 +30,6 @@ function HW11() {
                         <span id={'hw11-value'} className={s.numberLeft}>{value1}</span>
                         <SuperRange
                             id={'hw11-single-slider'}
-                            // сделать так чтоб value1 изменялось // пишет студент
                             value={value1}
                             callback = {change}
                         />
@@ -51,8 +41,6 @@ function HW11() {
                             id={'hw11-double-slider'}
                             value={[value1,value2]}
                             callback = {change}
-                            // сделать так чтоб value1/2 изменялось // пишет студент
-
                         />
                         <span id={'hw11-value-2'} className={s.numberRight}>{value2}</span>
                     </div>

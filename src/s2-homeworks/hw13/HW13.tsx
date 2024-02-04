@@ -8,12 +8,6 @@ import error400 from './images/400.svg'
 import error500 from './images/500.svg'
 import errorUnknown from './images/error.svg'
 
-/*
-* 1 - дописать функцию send
-* 2 - дизэйблить кнопки пока идёт запрос
-* 3 - сделать стили в соответствии с дизайном
-* */
-
 const HW13 = () => {
     const [code, setCode] = useState('')
     const [text, setText] = useState('')
@@ -28,7 +22,7 @@ const HW13 = () => {
         setInfo(infoValue);
     }
     const send = (x?: boolean | null) => () => {
-        const url = x === null ? 'https://xxxxxx.ccc' // имитация запроса на не корректный адрес
+        const url = x === null ? 'https://xxxxxx.ccc'
                                                             : 'https://samurai.it-incubator.io/api/3.0/homework/test'
         setterStates("","","",'...loading')
         setIsLoading(true)
@@ -63,7 +57,7 @@ const HW13 = () => {
 
     return (
         <div id={'hw13'}>
-            <div className={s2.hwTitle}>Homework #13</div>
+            <div className={s2.hwTitle}>Task #13</div>
 
             <div className={s2.hw}>
                 <div className={s.buttonsContainer}>
@@ -93,7 +87,7 @@ const HW13 = () => {
                     </SuperButton>
                     <SuperButton
                         id={'hw13-send-null'}
-                        onClick={send(null)} // имитация запроса на не корректный адрес
+                        onClick={send(null)}
                         xType={'secondary'}
                         disabled={isLoading}
                     >
