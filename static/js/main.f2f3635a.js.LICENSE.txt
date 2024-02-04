@@ -118,4 +118,4 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-//!!!!!!!!!!ЭТОТ APP ГЛАВНЫЙ!!!!!!!!!!!!
+//!!!!!!!!!!It this APP is main!!!!!!!!!!!!
