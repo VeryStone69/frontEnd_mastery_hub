@@ -88,27 +88,27 @@ const HW15 = () => {
         <div id={'hw15'}>
             <div className={s2.hwTitle}>Task #15</div>
             <div className={s2.hw}>
-            <SuperPagination
-                page={page}
-                itemsCountForPage={count}
-                totalCount={totalCount}
-                onChange={onChangePagination}
-            />
+                <SuperPagination
+                    page={page}
+                    itemsCountForPage={count}
+                    totalCount={totalCount}
+                    onChange={onChangePagination}
+                />
 
-            <div className={s.rowHeader}>
-                <div className={s.techHeader}>
-                    Tech
-                    <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
-                </div>
+                <div className={s.rowHeader}>
+                    <div className={s.techHeader}>
+                        Tech
+                        <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
+                    </div>
 
-                <div className={s.developerHeader}>
-                    Developer
-                    <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
+                    <div className={s.developerHeader}>
+                        Developer
+                        <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
+                    </div>
                 </div>
+                <div className={s.loading}>{idLoading && <Loader/>}</div>
+                {!idLoading && mappedTechs}
             </div>
-            <div className={s.loading}>{idLoading && <Loader/>}</div>
-            {!idLoading && mappedTechs}
-        </div>
         </div>
     )
 }
