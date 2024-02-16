@@ -21,7 +21,7 @@ const HW12 = () => {
         document.documentElement.dataset.theme = `${themeId}`
     }, [themeId])
 
-    const change = (id: number) => { // дописать функцию
+    const change = (id: number) => {
         dispatch(changeThemeId(id))
     }
 
@@ -29,7 +29,7 @@ const HW12 = () => {
     return (
         <div id={'hw12'}>
             <div id={'hw12-text'} className={s2.hwTitle}>
-                Homework #12
+                Task #12
             </div>
 
             <div className={s2.hw}>

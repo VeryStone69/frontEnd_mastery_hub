@@ -86,7 +86,8 @@ const HW15 = () => {
     ))
     return (
         <div id={'hw15'}>
-            <div className={s2.hwTitle}>Homework #15</div>
+            <div className={s2.hwTitle}>Task #15</div>
+            <div className={s2.hw}>
             <SuperPagination
                 page={page}
                 itemsCountForPage={count}
@@ -107,6 +108,7 @@ const HW15 = () => {
             </div>
             <div className={s.loading}>{idLoading && <Loader/>}</div>
             {!idLoading && mappedTechs}
+        </div>
         </div>
     )
 }

@@ -26,9 +26,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> =
         <div className={s.pagination}>
             <Pagination
                 id={id + '-pagination'}
-                sx={{
-                    // стили для Pagination // пишет студент
-                }}
+                sx={{}}
                 page={page}
                 count={lastPage}
                 onChange={onChangeCallback}
