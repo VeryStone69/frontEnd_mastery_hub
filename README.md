@@ -3,15 +3,15 @@
 
 ## Описание
 
-FrontEnd Mastery Hub — это комплексное приложение, разработанное для демонстрации и практики широкого спектра навыков фронтенд-разработки. Этот проект охватывает основные аспекты современной веб-разработки, предоставляя пользователю интерактивный опыт через реализацию типичных задач, с которыми сталкиваются фронтенд-разработчики. Особенности приложения включают в себя:
+FrontEnd Mastery Hub is a comprehensive application developed to demonstrate and practice a wide range of frontend development skills. This project covers fundamental aspects of modern web development, providing users with an interactive experience through the implementation of typical tasks faced by frontend developers. Features of the application include:
 
-## Основные функции
+## Key Features:
 
-- Реализация интерфейса реального времени для обмена сообщениями
-- Фильтрация задач по различным критериям (например, активные, завершенные)
-- Создание списков
-- Отображение cостояния загрузки.
-- Адаптивный и реактивный пользовательский интерфейс.
-- Изменение цветой схемы.
-- Реализация поиска
-- Селекторы: Реализация кастомных селекторов для улучшенного пользовательского взаимодействия и удобства выбора опций
+- Implementation of a real-time messaging interface
+- Task filtering by various criteria (e.g., active, completed)
+- List creation
+- Display of loading status
+- Adaptive and responsive user interface
+- Color scheme customization
+- Implementation of search functionality
+- Selectors: Implementation of custom selectors for enhanced user interaction and ease of option selection
